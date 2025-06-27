@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Presença - Festa do Benjamin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+        <div class="cloud cloud5"></div>
+        <div class="cloud cloud6"></div>
+        <div class="airplane airplane1"></div>
+        <div class="airplane airplane2"></div>
+        <div class="balloon balloon1"></div>
+        <div class="balloon balloon2"></div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="bunting">
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+            </div>
+            <h1 class="title">Confirmação de Presença</h1>
+            <h2 class="subtitle">Festa do Benjamin</h2>
+            <div class="age-badge">1 ano</div>
+        </header>
+
+        <div class="event-info">
+            <div class="info-card">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <span class="info-text">28 de Julho - 19:00</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <span class="info-text">Av. Saturnino Rangel Mauro, 621<br>Praia de Itaparica, Vila Velha</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🎈</span>
+                    <span class="info-text">Tindolele Cerimonial</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="rsvp-form" id="rsvpForm">
+            <div class="form-group">
+                <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Confirmo a minha presença</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="presenca" value="sim" required>
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Sim, estarei presente! 🎉</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="presenca" value="nao" required>
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Não poderei comparecer 😔</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="observacoes" class="form-label">Observações (opcional)</label>
+                <textarea id="observacoes" name="observacoes" class="form-textarea" placeholder="Alguma observação especial, restrição alimentar ou mensagem para o Benjamin..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Confirmar Presença</span>
+                <span class="btn-icon">🎈</span>
+            </button>
+        </form>
+
+        <div class="important-note">
+            <p><strong>Importante:</strong> Para melhor organização, pedimos que confirme sua presença até o dia <strong>10/07</strong>. Infelizmente, sem a confirmação, não será permitida a entrada ao cerimonial.</p>
+        </div>
+
+        <div class="hot-air-balloon">
+            <div class="balloon-envelope"></div>
+            <div class="balloon-basket"></div>
+            <div class="balloon-ropes"></div>
+        </div>
+    </div>
+
+    <div class="success-modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-balloon">🎈</div>
+            <h3>Confirmação Recebida!</h3>
+            <p id="confirmationMessage"></p>
+            <button onclick="closeModal()" class="modal-btn">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
